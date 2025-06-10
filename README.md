@@ -11,7 +11,11 @@ MARK = Agregado por el equipo de Marketing.
 | Columna  |   Tipo de Dato   | Descripción  |
 |----------|------------------|--------------|
 |id_cliente	|INT (PK) / UUID|Identificador único del cliente| ✅
-|nombre_cliente|VARCHAR(100)|Nombre completo del cliente|✅
+|pnombre|VARCHAR(25)|primer nombre del cliente|✅
+|snombre|VARCHAR(25)|segundo nombre del cliente|✅
+|appaterno|VARCHAR(25)|Apellido paterno del cliente|✅
+|apmaterno|VARCHAR(25)|Apellido materno del cliente|✅
+|fecha_nacimiento|DATE|Fecha nacimiento Cliente|✅
 |edad|INT	|Edad del cliente|✅
 |id_genero|INT (FK)	|Clave foránea a la tabla Generos|✅
 |id_ciudad|INT (FK)	|Clave foránea a la tabla Ciudades|✅

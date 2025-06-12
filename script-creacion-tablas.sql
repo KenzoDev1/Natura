@@ -19,7 +19,7 @@ CREATE TABLE comuna (
 
 CREATE TABLE ciudad (
     id_ciudad INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
-    id_comuna INT UNSIGNED NOT NULL UNIQUE COMMENT 'Foreign Key comuna',
+    id_comuna INT UNSIGNED NOT NULL COMMENT 'Foreign Key comuna',
     nombre VARCHAR(100) NOT NULL UNIQUE COMMENT 'Nombre de la ciudad',
 
     CONSTRAINT fk_ciudad_comuna
@@ -63,7 +63,7 @@ CREATE TABLE cliente(
     id_categoria INT UNSIGNED NOT NULL COMMENT 'Foreign Key categoria',
     monto_total_gastado DECIMAL(10,2) NOT NULL,
     id_metodo_pago TINYINT UNSIGNED NOT NULL COMMENT 'Foreign Key metodo_pago',
-    id_promocion INT UNSIGNED COMMENT 'Foreign Key promocion',
+    id_promocion INT UNSIGNED NOT NULL COMMENT 'Foreign Key promocion',
     nivel_satisfaccion INT UNSIGNED NOT NULL,
 
     CONSTRAINT fk_cliente_genero

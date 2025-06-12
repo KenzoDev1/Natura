@@ -63,7 +63,7 @@ CREATE TABLE cliente(
     id_categoria INT UNSIGNED NOT NULL COMMENT 'Foreign Key categoria',
     monto_total_gastado DECIMAL(10,2) NOT NULL,
     id_metodo_pago TINYINT UNSIGNED NOT NULL COMMENT 'Foreign Key metodo_pago',
-    id_promocion INT UNSIGNED COMMENT 'Foreign Key promocion',
+    id_promocion INT UNSIGNED NOT NULL COMMENT 'Foreign Key promocion',
     nivel_satisfaccion INT UNSIGNED NOT NULL,
 
     CONSTRAINT fk_cliente_genero
